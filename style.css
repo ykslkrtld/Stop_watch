@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 40vh;
+    margin: 10rem auto;
+    gap: 2rem;
+    background-color: rgb(134, 152, 157);
+    border-radius: 2rem;
+}
+
+.time span{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.buttons button{
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+}
