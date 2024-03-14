@@ -7,9 +7,9 @@ const stopBtn = document.querySelector(".stop")
 
 pause.style.display = "none"
 
-let sayacMs = 0
-let sayacS = 0
-let sayacM = 0
+let sayacMs = "00"
+let sayacS = "00"
+let sayacM = "00"
 let intervalMs = 0
 
 const funcStart = () => {

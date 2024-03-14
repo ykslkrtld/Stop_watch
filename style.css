@@ -18,7 +18,8 @@
     border-radius: 2rem;
 }
 
-.time span{
+.time{
+    font-family: Arial, sans-serif; 
     font-size: 2rem;
 }
 
