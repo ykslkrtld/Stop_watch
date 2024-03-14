@@ -21,6 +21,13 @@
 .time{
     font-family: Arial, sans-serif; 
     font-size: 2rem;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.time div{
+    width: 50px ;
 }
 
 .buttons{

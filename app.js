@@ -28,7 +28,6 @@ const funcStart = () => {
   millisecond.textContent = sayacMs.toString().padStart(2, "0");
   second.textContent = sayacS.toString().padStart(2, "0");
   minute.textContent = sayacM.toString().padStart(2, "0");
-
 }, 10)
 }
 
@@ -37,7 +36,6 @@ play.addEventListener("click", () => {
     play.style.display = "none"
     pause.style.display = "block"
 })
-
 
 pause.addEventListener("click", () => {
     play.style.display = "block"
