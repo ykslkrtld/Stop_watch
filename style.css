@@ -14,12 +14,12 @@
     margin: 10rem auto;
     gap: 2rem;
     background-color: rgb(134, 152, 157);
+    border: 5px solid chocolate;
     border-radius: 2rem;
 }
 
 .time span{
     font-size: 2rem;
-    display: inline-block;
 }
 
 .buttons{

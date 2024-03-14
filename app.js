@@ -7,19 +7,14 @@ const stopBtn = document.querySelector(".stop")
 
 pause.style.display = "none"
 
-let sayacMs = "00"
-let sayacS = "00"
-let sayacM = "00"
+let sayacMs = 0
+let sayacS = 0
+let sayacM = 0
 let intervalMs = 0
-
-
 
 const funcStart = () => {
   intervalMs = setInterval(() => {
   sayacMs++
-  millisecond.textContent = sayacMs
-  second.textContent = sayacS
-  minute.textContent = sayacM
 
   if (sayacMs === 100) {
     sayacMs = 0
@@ -29,9 +24,13 @@ const funcStart = () => {
     sayacS = 0
     sayacM++
   }
+
+  millisecond.textContent = sayacMs.toString().padStart(2, "0");
+  second.textContent = sayacS.toString().padStart(2, "0");
+  minute.textContent = sayacM.toString().padStart(2, "0");
+
 }, 10)
 }
-
 
 play.addEventListener("click", () => {
     funcStart()
@@ -57,10 +56,4 @@ stopBtn.addEventListener("click", () => {
     millisecond.textContent = "00"
     second.textContent = "00"
     minute.textContent = "00"
-
-
-
-
-
-
 })
